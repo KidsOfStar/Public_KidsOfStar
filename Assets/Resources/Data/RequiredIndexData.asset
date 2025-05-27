@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8428d3bb93c6344c907616e4b57f723, type: 3}
+  m_Name: RequiredIndexData
+  m_EditorClassIdentifier: 
+  chapter1List:
+  - characterType: 0
+    progress: 1
+    index: 10000
+  - characterType: 0
+    progress: 2
+    index: 10005
+  - characterType: 0
+    progress: 3
+    index: 10021
+  chapter2List:
+  - characterType: 3
+    progress: 1
+    index: 20002
+  - characterType: 4
+    progress: 3
+    index: 20011
+  - characterType: 7
+    progress: 5
+    index: 20027
+  chapter3List:
+  - characterType: 7
+    progress: 1
+    index: 30006
+  - characterType: 5
+    progress: 2
+    index: 3002
+  - characterType: 7
+    progress: 2
+    index: 30007
+  - characterType: 6
+    progress: 2
+    index: 3002
+  - characterType: 7
+    progress: 3
+    index: 3011
+  - characterType: 7
+    progress: 4
+    index: 3028
+  chapter4List:
+  - characterType: 8
+    progress: 1
+    index: 40001
+  - characterType: 10
+    progress: 2
+    index: 4002
+  - characterType: 10
+    progress: 3
+    index: 40009
+  - characterType: 10
+    progress: 4
+    index: 4010
+  - characterType: 9
+    progress: 5
+    index: 40018
+  chapter5List: []

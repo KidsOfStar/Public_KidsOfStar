@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a9d439efc16854458e6582867a4cb79, type: 3}
+  m_Name: Player Form Data
+  m_EditorClassIdentifier: 
+  playerFromDataList:
+  - formName: Stone
+    formImage: {fileID: 761482113, guid: 8bc8306f834470b4ba5265ff39b7c0a9, type: 3}
+    formAnim: {fileID: 22100000, guid: 2283efee023738c4aa8a9920d5df8db1, type: 2}
+    jumpForce: 0
+    colliderDirection: 1
+    offsetX: 0
+    offsetY: 0.3
+    sizeX: 0.75
+    sizeY: 0.6
+    force: 0
+    weight: 5
+    IsActive: 1
+    direction: 0
+    playerFormType: 1
+  - formName: Human
+    formImage: {fileID: 1727844007, guid: d06ffee833dc42d4cadc78e2351edaf8, type: 3}
+    formAnim: {fileID: 22100000, guid: 48c6daba1cf2bc640ab2a5b9031d1272, type: 2}
+    jumpForce: 8
+    colliderDirection: 0
+    offsetX: 0
+    offsetY: 0.7
+    sizeX: 0.6
+    sizeY: 1.4
+    force: 1.8
+    weight: 5
+    IsActive: 1
+    direction: 0
+    playerFormType: 2
+  - formName: Squirrel
+    formImage: {fileID: 2076127918, guid: 5c1b3cb93d2c4a848b4081e20ee66acc, type: 3}
+    formAnim: {fileID: 22100000, guid: 510a0a9ffd34f02428dbacd125510f1c, type: 2}
+    jumpForce: 12
+    colliderDirection: 1
+    offsetX: 0
+    offsetY: 0.3
+    sizeX: 0.3
+    sizeY: 0.6
+    force: 0.08
+    weight: 1
+    IsActive: 1
+    direction: 0
+    playerFormType: 4
+  - formName: Dog
+    formImage: {fileID: -372320300, guid: 4395c9b503ecf9d48a3476ceb874cc16, type: 3}
+    formAnim: {fileID: 22100000, guid: 9850f24ac044fcb45baefb134834d973, type: 2}
+    jumpForce: 10
+    colliderDirection: 1
+    offsetX: 0
+    offsetY: 0.2
+    sizeX: 0.72
+    sizeY: 0.45
+    force: 1.8
+    weight: 3
+    IsActive: 1
+    direction: 1
+    playerFormType: 8
+  - formName: Cat
+    formImage: {fileID: -75012031, guid: be2052563e1f1934a8f0ea4869c3fcf0, type: 3}
+    formAnim: {fileID: 22100000, guid: ff43a1e0e32003f4181256f2dfd045d6, type: 2}
+    jumpForce: 10
+    colliderDirection: 1
+    offsetX: 0
+    offsetY: 0.33
+    sizeX: 0.72
+    sizeY: 0.65
+    force: 0.15
+    weight: 2
+    IsActive: 1
+    direction: 1
+    playerFormType: 16
+  - formName: Hide
+    formImage: {fileID: 1749720049, guid: 63ea964f811089f42865f4df70f2602f, type: 3}
+    formAnim: {fileID: 22100000, guid: 46b24c8b3f7aff64a9f81c90d8f0bb9a, type: 2}
+    jumpForce: 0
+    colliderDirection: 0
+    offsetX: 0
+    offsetY: 0.7
+    sizeX: 0.6
+    sizeY: 1.3
+    force: 0
+    weight: 5
+    IsActive: 1
+    direction: 0
+    playerFormType: 32
