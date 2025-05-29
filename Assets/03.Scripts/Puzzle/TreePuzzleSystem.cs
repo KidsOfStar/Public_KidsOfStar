@@ -55,7 +55,6 @@ public class TreePuzzleSystem : MonoBehaviour
     // 퍼즐 준비
     public virtual void SetupPuzzle(TreePuzzleData data, int puzzleClearIndex)
     {
-
         puzzleIndex = puzzleClearIndex;
         correctSprites = new List<Sprite>(data.pieceSprites);
         gridWidth = data.gridWidth;
@@ -153,7 +152,7 @@ public class TreePuzzleSystem : MonoBehaviour
         }
 
         CompletePuzzle();
-    } //
+    } 
 
     //퍼즐 Clear시
     protected virtual void CompletePuzzle()

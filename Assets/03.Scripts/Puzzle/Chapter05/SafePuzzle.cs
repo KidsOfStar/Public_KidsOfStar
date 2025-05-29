@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -177,7 +176,6 @@ public class SafePuzzle : MonoBehaviour, IPointerClickHandler
     public void SetSafeNumber(int number)
     {
         safeNumber = number;
-        Debug.Log($"[SafePuzzle] 금고 번호 설정: {safeNumber}");
     }
 
     // 클릭 이벤트 처리

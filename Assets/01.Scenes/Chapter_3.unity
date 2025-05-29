@@ -26480,7 +26480,7 @@ Transform:
   m_GameObject: {fileID: 2038232328}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 313, y: 1.5, z: 0}
+  m_LocalPosition: {x: 310, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26502,14 +26502,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDisableInStart: 1
   positionDatas:
+  - progress: 1
+    isFlip: 0
+    isActive: 0
+    position: {x: 310, y: 1.5, z: 0}
+  - progress: 2
+    isFlip: 0
+    isActive: 0
+    position: {x: 310, y: 1.5, z: 0}
+  - progress: 3
+    isFlip: 0
+    isActive: 0
+    position: {x: 310, y: 1.5, z: 0}
   - progress: 4
     isFlip: 0
     isActive: 1
-    position: {x: 310, y: 1.4, z: 0}
-  - progress: 5
-    isFlip: 0
-    isActive: 1
-    position: {x: 310, y: -100, z: 0}
+    position: {x: 310, y: 1.5, z: 0}
 --- !u!114 &2038232331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27795,7 +27803,7 @@ MonoBehaviour:
     position: {x: 313, y: 1.5, z: 0}
   - progress: 4
     isFlip: 0
-    isActive: 1
+    isActive: 0
     position: {x: 313, y: -100, z: 0}
 --- !u!114 &7963855876493376282
 MonoBehaviour:

@@ -78,10 +78,6 @@ public class SafePopup : PopupBase
 
         var data = datas[puzzleIndexs[index]];
 
-        //Debug.Log($"[StartPuzzleAtIndex] 퍼즐 시작 - Scene: {sceneType}, safeIndex: {safeIndex}");
-        //Debug.Log($" - 사용될 TreePuzzleData 이름: {data.name}");
-        //Debug.Log($" - 연결된 퍼즐 시스템: {system.name}");
-
         puzzleSystem.SetupPuzzle(data, 2);
         puzzleSystem.GeneratePuzzle();
         puzzleSystem.StartPuzzle();

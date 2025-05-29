@@ -15,9 +15,6 @@ public class BgmLayeredFader : MonoBehaviour
     [Header("Dialog")]
     [SerializeField] private int strMelodyIndex = 5012;
     [SerializeField] private int[] dialogIndexes;
-    
-    // 5022, 5023, 5024, 5026, 5027 시작할 때
-    // [SerializeField] private int[] finalDialogs;
 
     private readonly Dictionary<MainBgmSourceType, AudioSource> audioDict = new();
     private readonly Dictionary<int, MainBgmSourceType> audioByIndexDict = new();

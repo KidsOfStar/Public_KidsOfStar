@@ -7,9 +7,6 @@ using UnityEngine.Networking;
 [Serializable]
 public class SaveData
 {
-    // TODO: 현재 폼 저장
-    // TODO: enumFlags로 폼 해금 저장
-
     public string saveName;
     public int difficulty;
     public int scene;

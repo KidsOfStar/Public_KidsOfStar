@@ -13,24 +13,24 @@ MonoBehaviour:
   m_Name: AcornPuzzle
   m_EditorClassIdentifier: 
   puzzleId: AcornPuzzle
-  backgroundSprite: {fileID: -930275152, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
+  backgroundSprite: {fileID: 801439757, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
   pieceSprites:
-  - {fileID: -1755681074, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: -1219625041, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: 1427466734, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: -641154682, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: 1099159526, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: 776593656, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: -1373714320, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: -987553323, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: -809945563, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: -1530472581, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: -1391939037, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: -1385949022, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: 1628405080, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: -534775593, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: 515683174, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
-  - {fileID: -1551028141, guid: b542dc146b0b5a14c963f38d2679721d, type: 3}
+  - {fileID: -651205873, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: -1475059371, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: -782306319, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: -614620387, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: 667370792, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: 607667119, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: 765288051, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: 234517342, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: 1951951504, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: -982576375, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: -707464461, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: 639850269, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: -1770488807, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: 1794109026, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: 2110620731, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
+  - {fileID: -610595547, guid: d17d91d0334bd3d44b866e3940a53760, type: 3}
   gridWidth: 4
   easyTimeLimit: 90
   hardTimeLimit: 90

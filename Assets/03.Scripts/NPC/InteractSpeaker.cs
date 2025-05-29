@@ -45,7 +45,6 @@ public abstract class InteractSpeaker : MonoBehaviour
 
         if (indexList == null || indexList.Length == 0)
         {
-            Debug.LogWarning($"No required dialog index found for {ChapterType}");
             return;
         }
         
@@ -128,7 +127,6 @@ public abstract class InteractSpeaker : MonoBehaviour
         var key = Managers.Instance.GameManager.ChapterProgress;
         if (!dialogByProgress.TryGetValue(key, out int dialogIndex))
         {
-            Debug.LogWarning($"No dialog found for progress {key}");
             return;
         }
 

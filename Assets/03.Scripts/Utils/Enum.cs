@@ -80,6 +80,7 @@ public enum DialogCustomMethodType
 
 public enum BgmSoundType
 {
+    Night,
     Maorum,
     MaorumChase,
     InForest,
@@ -89,6 +90,7 @@ public enum BgmSoundType
     City,
     CityPuzzle,
     Aquarium,
+    Intro,
 }
 
 public enum AmbienceSoundType

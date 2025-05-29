@@ -49,6 +49,7 @@ public class Elevator : MonoBehaviour
             StartCoroutine(Move(false));
     }
 
+    // 배선판 퍼즐 클리어 시 사용 할 함수
     public void UnlockElevator()
     {
         isLocked = false;

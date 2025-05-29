@@ -433,10 +433,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\uAFC0\uD301 \uB4DC\uB9BD\uB2C8\uB2E4"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ef8ade7b327847a43b90050c3daadee9, type: 2}
-  m_sharedMaterial: {fileID: -5283566785530584950, guid: ef8ade7b327847a43b90050c3daadee9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4ada46533e638f841a3f535f3f3ba287, type: 2}
+  m_sharedMaterial: {fileID: -5283566785530584950, guid: 4ada46533e638f841a3f535f3f3ba287, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

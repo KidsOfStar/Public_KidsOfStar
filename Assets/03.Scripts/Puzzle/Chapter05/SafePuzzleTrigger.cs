@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SafePuzzleTrigger : MonoBehaviour
 {
@@ -31,12 +30,11 @@ public class SafePuzzleTrigger : MonoBehaviour
         skillBTN = Managers.Instance.UIManager.Get<PlayerBtn>().skillPanel;
 
     }
+
     public void init()
     {
         // 진행도 갱신 이벤트 구독
         Managers.Instance.GameManager.OnProgressUpdated += DisableExclamation;
-
-        Debug.Log($"{Managers.Instance.GameManager.ChapterProgress}");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -75,9 +73,6 @@ public class SafePuzzleTrigger : MonoBehaviour
         if ((dangerFormMask & currentForm.playerFormType) != 0)
         {
             OntextBubbleText();
-            //Managers.Instance.UIManager.Show<WarningPopup>(
-            //    WarningType.Squirrel
-            //    );
         }
         else
             TryStartPuzzle();
@@ -91,20 +86,16 @@ public class SafePuzzleTrigger : MonoBehaviour
             var popup = Managers.Instance.UIManager.Show<TutorialPopup>(4);
             popup.OnClosed += () =>
             {
-                Debug.Log("튜토리얼 후 퍼즐 시작");
-
                 var safePopup = Managers.Instance.UIManager.Show<SafePopup>();
                 safePopup.Opened(sceneType);  // 안전한 폼일 경우 팝업 표시
                 safePopup.safePuzzle.SetSafeNumber(safeNumber);
             };
             return;
         }
-        Debug.Log("퍼즐 시작");
         // 튜토리얼 보여주고 시작
         var safePopup = Managers.Instance.UIManager.Show<SafePopup>(); // 안전한 폼일 경우 팝업 표시
         safePopup.Opened(sceneType);  // 안전한 폼일 경우 팝업 표시
         safePopup.safePuzzle.SetSafeNumber(safeNumber);
-
     }
 
     private void OntextBubbleText()
@@ -137,8 +128,6 @@ public class SafePuzzleTrigger : MonoBehaviour
     // 게임 클리어시 비활성화
     public void DisableExclamation()
     {
-        Debug.Log("실행 중");
-        Debug.Log($"현재 진행도: {Managers.Instance.GameManager.ChapterProgress}, 설정된 진행도: {curChapterProgress}");
         if (Managers.Instance.GameManager.ChapterProgress != curChapterProgress)
             exclamationInstance.SetActive(false);
         if (Managers.Instance.GameManager.ChapterProgress > curChapterProgress)

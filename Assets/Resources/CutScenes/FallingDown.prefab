@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6435380927256949275}
   - component: {fileID: 4514319605648224165}
   - component: {fileID: 1764859208840084606}
+  - component: {fileID: 8892227719936734095}
   m_Layer: 0
   m_Name: FallingDown
   m_TagString: Untagged
@@ -87,6 +88,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxSignal: {fileID: 11400000, guid: 03a8f1bb4da0bef4390b7347d0c7cd3f, type: 2}
   sfxSounds: 15000000
+--- !u!114 &8892227719936734095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394141486778975500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf595605bd2f874da47e57debda173d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <BgmSoundType>k__BackingField: 0
+  <AmbienceSoundType>k__BackingField: 0
+  <PlayAmbience>k__BackingField: 0
+  <PlayBgmSignal>k__BackingField: {fileID: 11400000, guid: b89bdacf10816754d83f49b7f9d1d962, type: 2}
+  <StopBgmSignal>k__BackingField: {fileID: 11400000, guid: b47cf79185562474fb10e5ebe8df1e44, type: 2}
 --- !u!1 &458319311454096031
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +776,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: ee65c02d847674044be6200a16cb5487, type: 2}
     - {fileID: 11400000, guid: 2eca4b4b448990a4ab57ff4b64d64771, type: 2}
     - {fileID: 11400000, guid: 03a8f1bb4da0bef4390b7347d0c7cd3f, type: 2}
+    - {fileID: 11400000, guid: b89bdacf10816754d83f49b7f9d1d962, type: 2}
+    - {fileID: 11400000, guid: b47cf79185562474fb10e5ebe8df1e44, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -793,6 +813,34 @@ MonoBehaviour:
         - m_Target: {fileID: 1764859208840084606}
           m_TargetAssemblyTypeName: SfxPlayer, Assembly-CSharp
           m_MethodName: PlaySfx
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8892227719936734095}
+          m_TargetAssemblyTypeName: BgmPlayer, Assembly-CSharp
+          m_MethodName: PlayBgm
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8892227719936734095}
+          m_TargetAssemblyTypeName: BgmPlayer, Assembly-CSharp
+          m_MethodName: StopBGM
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
