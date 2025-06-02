@@ -8,6 +8,8 @@ public class Chapter0503Base : SceneBase
 
     public Collider2D meetingWomanTriger; // 앞
     public Collider2D meetingBihyiTriger; // 뒤
+    
+    private bool IsChapterProgress = false; // 챕터 진행 여부
 
     [SerializeField] private BgmLayeredFader bgmLayeredFader;
 
@@ -15,32 +17,41 @@ public class Chapter0503Base : SceneBase
     {
         var gm = Managers.Instance.GameManager;
 
-        if (gm.VisitCount == 0)
+        if (gm.SavePoint == 0)
         {
             // 처음 503 진입
             gm.ChapterProgress = 3;
             meetingWomanTriger.enabled = true;
             meetingBihyiTriger.enabled = false;
-            gm.VisitCount++;
+            gm.SavePoint++;
         }
-        else if (gm.VisitCount == 1)
+        else if (gm.SavePoint == 1)
         {
+            gm.ChapterProgress = 4; // 503 진입 시 ChapterProgress를 4로 설정
             // 두 번째 503 진입 (504 -> 503)
             meetingWomanTriger.enabled = false;
             meetingBihyiTriger.enabled = true;
 
-            if (Managers.Instance.GameManager.ChapterProgress == 3)
-                Managers.Instance.GameManager.UpdateProgress();
-            
-            if (Managers.Instance.GameManager.IsNewGame)
-                gm.ChapterProgress = 4;
+            if (IsChapterProgress == true)
+            {
+                gm.UpdateProgress();
+            }
         }
+        else if (gm.SavePoint == 2)
+        {
+            // 세 번째 이상 503 진입
+            gm.ChapterProgress = 5; // 503 진입 시 ChapterProgress를 4로 설정
+
+            meetingWomanTriger.enabled = false;
+            meetingBihyiTriger.enabled = true;
+        }
+
 
         // Crowd 처리
         if (gm.ChapterProgress == 4)
             crowd.SetActive(false);
 
-        EditorLog.Log($"[Chapter503] 최종 VisitCount: {gm.VisitCount}");
+        EditorLog.Log($"[Chapter503] 최종 VisitCount: {gm.SavePoint}");
         EditorLog.Log(Managers.Instance.GameManager.ChapterProgress);
     }
 
@@ -62,6 +73,12 @@ public class Chapter0503Base : SceneBase
     {
         if (collision.CompareTag("Player"))
         {
+            IsChapterProgress = true;
+
+            var gm = Managers.Instance.GameManager;
+            if (gm.SavePoint == 1)
+                gm.SavePoint++;    
+
             var upgrade = Managers.Instance.GameManager;
             if (upgrade.ChapterProgress == 4)
             {

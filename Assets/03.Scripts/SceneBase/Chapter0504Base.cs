@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 public class Chapter0504Base : SceneBase
 {
@@ -6,10 +7,11 @@ public class Chapter0504Base : SceneBase
     {
         var gm = Managers.Instance.GameManager;
         
-        if (gm.VisitCount == 1)
+        if (gm.SavePoint == 1)
         {
             gm.ChapterProgress = 3; // 504 진입 시 ChapterProgress를 3으로 설정
         }
+
     }
     protected override void CutSceneEndCallback() { }
     protected override void InitSceneExtra(Action callback) {

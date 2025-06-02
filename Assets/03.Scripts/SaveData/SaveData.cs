@@ -19,7 +19,7 @@ public class SaveData
     public PlayerFormType unlockedPlayerForms;
     public PlayerFormType currentPlayerForm;
     public EndingType completedEnding;
-    public int visitCount;
+    public int savePoint;
     public bool[,] clearedSafePuzzles = new bool[3, 3];
 
 
@@ -35,7 +35,7 @@ public class SaveData
         currentPlayerForm = gameManager.Player.FormControl.CurFormData.playerFormType; 
         chapterTrust = gameManager.GetTrustArray();
         completedEnding = gameManager.CompletedEnding;
-        visitCount = gameManager.VisitCount;
+        savePoint = gameManager.SavePoint;
     }
 
     public void LoadData()
